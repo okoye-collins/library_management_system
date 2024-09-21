@@ -5,7 +5,6 @@ from .views import AddBookView, RemoveBookView, ListBorrowedBooksView, ListUnava
 urlpatterns = [
     path('add-book/', AddBookView.as_view(), name='add-book'),
     path('remove-book/<int:id>/', RemoveBookView.as_view(), name='remove-book'),
-    # path('users/', ListUsersView.as_view(), name='list-users'),
     path('borrowed-books/', ListBorrowedBooksView.as_view(), name='list-borrowed-books'),
     path('unavailable-books/', ListUnavailableBooksView.as_view(), name='list-unavailable-books'),
 ]
