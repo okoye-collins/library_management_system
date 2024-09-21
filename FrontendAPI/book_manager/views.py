@@ -1,6 +1,6 @@
 from rest_framework import generics
-from .models import Book, User, Borrow
-from .serializers import BookSerializer, UserSerializer, BorrowSerializer
+from .models import Book, Borrow
+from .serializers import BookSerializer, BorrowSerializer
 
 # Create your views here.
 
