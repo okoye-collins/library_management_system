@@ -8,6 +8,6 @@ from .serializers import UserSignupSerializer
 # Create your views here.
 
 
-class UserViewSet(CreateAPIView):
+class UserAPIView(CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSignupSerializer
